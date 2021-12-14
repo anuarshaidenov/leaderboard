@@ -7,8 +7,7 @@
 }
 
 body {
-  background-image: url('../images/sreenshot-books.png');
-  background-color: bisque;
+  font-family: serif;
 }
 
 img {
@@ -32,4 +31,9 @@ a {
   width: 90%;
   max-width: 1000px;
   margin: 0 auto;
+
+  &--flex {
+    display: flex;
+    gap: 1rem;
+  }
 }

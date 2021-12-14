@@ -6,6 +6,40 @@
     <title>Webpack Exercise</title>
   </head>
   <body>
-    <h1>Hello webpack!</h1>
+    <header>
+      <h1 class="logo">Leaderboard</h1>
+    </header>
+    <main>
+      <div class="container container--flex">
+        <section class="board">
+          <h2 class="subtitle board__subtitle">Recent scores</h2>
+          <button type="button" class="btn btn-main">Refresh</button>
+          <ul class="board__scores">
+            <li class="board__score">Name: 100</li>
+            <li class="board__score">Name: 100</li>
+            <li class="board__score">Name: 100</li>
+            <li class="board__score">Name: 100</li>
+          </ul>
+        </section>
+        <section class="add-score">
+          <h2 class="subtitle">Add your score</h2>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="add-score__name"
+            placeholder="Your Name"
+          />
+          <input
+            type="number"
+            name="score"
+            id="score"
+            class="add-score__score"
+            placeholder="Your Score"
+          />
+          <button type="submit" class="btn btn-main">Submit</button>
+        </section>
+      </div>
+    </main>
   </body>
 </html>
