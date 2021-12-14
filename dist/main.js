@@ -1,0 +1,2 @@
+(()=>{"use strict";console.log("Wag1")})();
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibWFpbi5qcyIsIm1hcHBpbmdzIjoibUJBRUFBLFFBQVFDLElBQUksUyIsInNvdXJjZXMiOlsid2VicGFjazovL3dlYnBhY2stc2V0dXAvLi9zcmMvanMvaW5kZXguanMiXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0ICcuLi9zdHlsZXMvbWFpbi5jc3MnO1xuXG5jb25zb2xlLmxvZygnV2FnMScpO1xuIl0sIm5hbWVzIjpbImNvbnNvbGUiLCJsb2ciXSwic291cmNlUm9vdCI6IiJ9

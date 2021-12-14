@@ -1,0 +1,35 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url('../images/sreenshot-books.png');
+  background-color: bisque;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.hidden {
+  display: none;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
