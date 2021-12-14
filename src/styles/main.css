@@ -7,11 +7,6 @@
   padding: 0;
 }
 
-body {
-  background-image: url("../images/sreenshot-books.png");
-  background-color: bisque;
-}
-
 img {
   max-width: 100%;
 }
@@ -33,5 +28,31 @@ a {
   width: 90%;
   max-width: 1000px;
   margin: 0 auto;
+}
+
+.container--flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+}
+
+.board__subtitle {
+  display: inline-block;
+}
+
+.board__scores {
+  border: 1px solid #000;
+}
+
+.add-score {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.5rem;
 }
 /*# sourceMappingURL=main.css.map */
