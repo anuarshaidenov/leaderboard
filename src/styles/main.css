@@ -7,6 +7,10 @@
   padding: 0;
 }
 
+body {
+  font-family: serif;
+}
+
 img {
   max-width: 100%;
 }
@@ -35,6 +39,10 @@ a {
   display: -ms-flexbox;
   display: flex;
   gap: 1rem;
+}
+
+h1 {
+  font-size: 2rem;
 }
 
 .board__subtitle {
