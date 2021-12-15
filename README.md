@@ -1,53 +1,49 @@
 # Leaderboard
 
-> One paragraph statement about the project.
+> The leaderboard website displays scores submitted by different players. It also allows you to submit your score. All data is preserved thanks to the external Leaderboard API service.
 
 ![screenshot](./screenshot.png)
 
-Additional description about the project and its features.
-
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- JavaScript
+- HTML
+- SCSS
+- Webpack
+- npm
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://anuarshaidenov.github.io/leaderboard/dist/)
 
-## Getting Started
+## Installation
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+Go to your terminal, navigate to your working directory and run
 
-To get a local copy up and running follow these simple example steps.
+`git clone https://github.com/anuarshaidenov/leaderboard.git`
 
-### Prerequisites
+After that navigate to the newly created folder
 
-### Setup
+`cd leaderboard`
 
-### Install
+You now have access to the files.
+To install necessary dependencies run
 
-### Usage
+`npm install`
 
-### Run tests
+Start a local server running the command
 
-### Deployment
+`npm start`
 
-## Authors
+You should now have the project running locally on a dev server.
 
-👤 **Author1**
+## Author
+
+👤 **Anuar Shaidenov**
 
 - GitHub: [@anuarshaidenov](https://github.com/anuarshaidenov)
 - Twitter: [@anuarnyi](https://twitter.com/anuarnyi)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/anuar-shaidenov-365a951b8/)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
 ## 🤝 Contributing
 
@@ -58,12 +54,6 @@ Feel free to check the [issues page](../../issues/).
 ## Show your support
 
 Give a ⭐️ if you like this project!
-
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
 
 ## 📝 License
 
