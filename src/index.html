@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Webpack Exercise</title>
+    <title>Leaderboard</title>
   </head>
   <body>
     <header>
@@ -13,8 +13,10 @@
       <div class="container container--flex">
         <section class="board">
           <h2 class="subtitle board__subtitle">Recent scores</h2>
-          <button type="button" class="btn btn-main">Refresh</button>
-          <ul class="board__scores">
+          <button type="button" class="btn btn-main" id="refresh">
+            Refresh
+          </button>
+          <ul class="board__scores" id="scores">
             <li class="board__score">Name: 100</li>
             <li class="board__score">Name: 100</li>
             <li class="board__score">Name: 100</li>
@@ -23,21 +25,34 @@
         </section>
         <section class="add-score">
           <h2 class="subtitle">Add your score</h2>
-          <input
-            type="text"
-            name="name"
-            id="name"
-            class="add-score__name"
-            placeholder="Your Name"
-          />
-          <input
-            type="number"
-            name="score"
-            id="score"
-            class="add-score__score"
-            placeholder="Your Score"
-          />
-          <button type="submit" class="btn btn-main">Submit</button>
+          <form action="/" class="add-score__form" id="add-score-form">
+            <input
+              type="text"
+              name="name"
+              id="name-input"
+              class="add-score__name"
+              placeholder="Your Name"
+              autocomplete="off"
+              required
+            />
+            <input
+              type="number"
+              name="score"
+              id="score-input"
+              class="add-score__score"
+              placeholder="Your Score"
+              min="0"
+              max="100"
+              required
+            />
+            <button type="submit" class="btn btn-main">Submit</button>
+            <p class="add-score__message hidden" id="add-score-message">
+              New score has been added successfully!
+            </p>
+            <p class="add-score__message--error hidden" id="error-message">
+              Failed to add❗️
+            </p>
+          </form>
         </section>
       </div>
     </main>
