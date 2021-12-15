@@ -53,7 +53,7 @@ h1 {
   border: 1px solid #000;
 }
 
-.add-score {
+.add-score__form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
