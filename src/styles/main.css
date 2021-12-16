@@ -22,7 +22,7 @@ body {
   background-color: var(--color-main-bg);
   background-image: url(../images/bg.svg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
   background-size: cover;
 }
 
