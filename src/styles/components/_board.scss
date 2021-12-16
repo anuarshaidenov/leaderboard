@@ -1,6 +1,7 @@
 .board {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: min-content min-content;
   grid-row-gap: 1rem;
 
   &__subtitle {

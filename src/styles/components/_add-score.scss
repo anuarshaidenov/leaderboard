@@ -36,7 +36,9 @@
   }
 
   &__message {
+    margin-top: 1rem;
     font-weight: 700;
+    transition: all 0.2s;
 
     &--error {
       color: red;
