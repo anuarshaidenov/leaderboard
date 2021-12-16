@@ -1,11 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 :root {
   --color-main-bg: #d9e3f7;
   --color-secondary: #74a2ff;
   --color-secondary-dark: #3563be;
   --color-text: #190909;
   --color-tertiary: #a3a6bb;
-  --color-white-transparent: rgba(255, 255, 255, 0.6);
+  --color-white-transparent: rgba(255, 255, 255, 0.4);
 }
 
 *,
@@ -18,7 +18,7 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   background-color: var(--color-main-bg);
   background-image: url(../images/bg.svg);
   background-repeat: no-repeat;
@@ -41,6 +41,10 @@ ul {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+input {
+  font-family: inherit;
 }
 
 .hidden {
@@ -106,6 +110,7 @@ a {
   color: #fff;
   font-weight: 700;
   cursor: pointer;
+  font-family: inherit;
 }
 
 .btn-main:hover {

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 *,
 *::after,
@@ -9,7 +9,7 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   background-color: var(--color-main-bg);
   background-image: url(../images/bg.svg);
   background-repeat: no-repeat;
@@ -32,6 +32,10 @@ ul {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+input {
+  font-family: inherit;
 }
 
 .hidden {
