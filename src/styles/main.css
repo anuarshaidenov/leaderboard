@@ -191,6 +191,14 @@ a {
   margin-bottom: 1rem;
 }
 
+.add-score__message {
+  font-weight: 700;
+}
+
+.add-score__message--error {
+  color: red;
+}
+
 .scoreboard {
   background-color: var(--color-white-transparent);
   border: none;

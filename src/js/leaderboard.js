@@ -12,7 +12,7 @@ class Leaderboard {
   async fetchScores() {
     try {
       const response = await fetch(
-        `${this.#baseUrl}games/${this.#gameID}/scores/`,
+        `${this.#baseUrl}games/${this.#gameID}/scores/`
       );
 
       if (!response.ok) throw new Error('Failed to fetch');
@@ -36,14 +36,14 @@ class Leaderboard {
           },
           referrerPolicy: 'no-referrer',
           body: JSON.stringify(scoreObject),
-        },
+        }
       );
 
       if (!response.ok) throw new Error('bad request');
 
       return response.json();
     } catch (error) {
-      return error;
+      return false;
     }
   }
 

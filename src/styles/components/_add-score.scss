@@ -34,4 +34,12 @@
   &__subtitle {
     margin-bottom: 1rem;
   }
+
+  &__message {
+    font-weight: 700;
+
+    &--error {
+      color: red;
+    }
+  }
 }
