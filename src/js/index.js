@@ -11,6 +11,10 @@ const refreshButton = document.getElementById('refresh');
 const displayScoreboard = async () => {
   leaderboardView.renderLoadingMessage();
   const scores = await leaderboard.getScores();
+  if (!scores) {
+    leaderboardView.renderErrorMessage();
+    return;
+  }
   leaderboardView.renderScores(scores);
 };
 
