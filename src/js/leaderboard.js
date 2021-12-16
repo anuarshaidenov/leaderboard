@@ -1,5 +1,5 @@
 /* eslint-disable comma-dangle */
-const gameID = 'jy7H24VNgMhDXHdXJ4Sz';
+const gameID = 'ccOqEXAN4wp5rkkNUUQ8';
 
 class Leaderboard {
   #gameID;

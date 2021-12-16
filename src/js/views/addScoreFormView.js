@@ -19,16 +19,16 @@ class AddScoreFormView {
   }
 
   renderAddScoreMessage() {
-    this.#addScoreMessage.classList.remove('hidden');
+    this.#addScoreMessage.classList.remove('opacity-0');
     setTimeout(() => {
-      this.#addScoreMessage.classList.add('hidden');
+      this.#addScoreMessage.classList.add('opacity-0');
     }, 2000);
   }
 
   renderErrorMessage() {
-    this.#errorMessage.classList.remove('hidden');
+    this.#errorMessage.classList.remove('opacity-0');
     setTimeout(() => {
-      this.#errorMessage.classList.add('hidden');
+      this.#errorMessage.classList.add('opacity-0');
     }, 2000);
   }
 }
