@@ -1,3 +1,4 @@
+/* eslint-disable comma-dangle */
 const gameID = 'jy7H24VNgMhDXHdXJ4Sz';
 
 class Leaderboard {
@@ -19,7 +20,7 @@ class Leaderboard {
 
       return response.json();
     } catch (error) {
-      return error;
+      return false;
     }
   }
 
@@ -50,10 +51,12 @@ class Leaderboard {
   async getScores() {
     try {
       const { result: scoreBoard } = await this.fetchScores();
+      if (!scoreBoard) throw new Error('Failed to fetch scores');
+
       scoreBoard.sort((score1, score2) => score2.score - score1.score);
       return scoreBoard;
     } catch (error) {
-      return error;
+      return false;
     }
   }
 }
