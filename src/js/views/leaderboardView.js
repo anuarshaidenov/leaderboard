@@ -1,3 +1,4 @@
+/* eslint-disable operator-linebreak */
 const scoresContainer = document.getElementById('scores');
 
 class LeaderboardView {
@@ -12,11 +13,12 @@ class LeaderboardView {
   }
 
   static generateScoreMarkup(score) {
-    return `<li class="board__score">${score.user}: ${score.score}</li>`;
+    return `<li class="scoreboard__item">${score.user} <span>${score.score}</span></li>`;
   }
 
   renderLoadingMessage() {
-    this.#scoresContainer.innerHTML = 'Loading...';
+    this.#scoresContainer.innerHTML =
+      '<li class="scoreboard__item">Loading...</span></li>';
   }
 
   renderScores(scores) {

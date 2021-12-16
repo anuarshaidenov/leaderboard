@@ -7,24 +7,26 @@
   </head>
   <body>
     <header>
-      <h1 class="logo">Leaderboard</h1>
+      <div class="container">
+        <h1 class="logo">Leaderboard</h1>
+      </div>
     </header>
     <main>
       <div class="container container--flex">
         <section class="board">
           <h2 class="subtitle board__subtitle">Recent scores</h2>
-          <button type="button" class="btn btn-main" id="refresh">
+          <button type="button" class="btn btn-main board__btn" id="refresh">
             Refresh
           </button>
-          <ul class="board__scores" id="scores">
-            <li class="board__score">Name: 100</li>
-            <li class="board__score">Name: 100</li>
-            <li class="board__score">Name: 100</li>
-            <li class="board__score">Name: 100</li>
+          <ul class="scoreboard board__scoreboard" id="scores">
+            <li class="scoreboard__item">Name: 100</li>
+            <li class="scoreboard__item">Name: 100</li>
+            <li class="scoreboard__item">Name: 100</li>
+            <li class="scoreboard__item">Name: 100</li>
           </ul>
         </section>
         <section class="add-score">
-          <h2 class="subtitle">Add your score</h2>
+          <h2 class="add-score__subtitle subtitle">Add your score</h2>
           <form action="/" class="add-score__form" id="add-score-form">
             <input
               type="text"
@@ -45,7 +47,9 @@
               max="100"
               required
             />
-            <button type="submit" class="btn btn-main">Submit</button>
+            <button type="submit" class="btn btn-main add-score__btn">
+              Submit
+            </button>
             <p class="add-score__message hidden" id="add-score-message">
               New score has been added successfully!
             </p>

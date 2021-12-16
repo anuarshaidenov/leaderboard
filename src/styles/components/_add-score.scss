@@ -2,6 +2,36 @@
   &__form {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    align-items: flex-start;
+    gap: 1.25rem;
+    width: 100%;
+
+    @media (min-width: 768px) {
+      width: 70%;
+    }
+  }
+
+  &__btn {
+    width: 100%;
+    padding: 1.4em 1.2em;
+
+    @media (min-width: 768px) {
+      width: auto;
+      padding: 0.8em 1.2em;
+    }
+  }
+
+  input {
+    background-color: var(--color-white-transparent);
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    padding: 1rem;
+    font-weight: 700;
+    width: 100%;
+  }
+
+  &__subtitle {
+    margin-bottom: 1rem;
   }
 }
