@@ -21,6 +21,11 @@ class LeaderboardView {
       '<li class="scoreboard__item">Loading...</span></li>';
   }
 
+  renderErrorMessage() {
+    this.#scoresContainer.innerHTML =
+      '<li class="scoreboard__item">FAILED TO FETCH❗️</span></li>';
+  }
+
   renderScores(scores) {
     this.#clearScoresContainer();
     scores.forEach((score) => {
