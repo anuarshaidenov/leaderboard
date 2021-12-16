@@ -11,6 +11,10 @@ const refreshButton = document.getElementById('refresh');
 const displayScoreboard = async () => {
   leaderboardView.renderLoadingMessage();
   const scores = await leaderboard.getScores();
+  if (!scores) {
+    leaderboardView.renderErrorMessage();
+    return;
+  }
   leaderboardView.renderScores(scores);
 };
 
@@ -19,7 +23,11 @@ addScoreForm.addEventListener('submit', async (e) => {
 
   const user = nameInput.value;
   const score = +scoreInput.value;
-  await leaderboard.addScore(user, score);
+  const responseAdd = await leaderboard.addScore(user, score);
+  if (!responseAdd) {
+    addScoreFormView.renderErrorMessage();
+    return;
+  }
 
   addScoreFormView.clearInputFields();
   await displayScoreboard();

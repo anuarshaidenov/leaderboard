@@ -1,9 +1,23 @@
 .board {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: min-content min-content;
+  grid-row-gap: 1rem;
+
   &__subtitle {
     display: inline-block;
   }
 
-  &__scores {
-    border: 1px solid #000;
+  &__scoreboard {
+    grid-column: span 2;
+  }
+
+  &__btn {
+    align-self: center;
+    justify-self: end;
+
+    @media (min-width: 768px) {
+      align-self: start;
+    }
   }
 }

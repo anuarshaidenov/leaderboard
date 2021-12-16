@@ -1,0 +1,33 @@
+.scoreboard {
+  background-color: var(--color-white-transparent);
+  border: none;
+  border-radius: 10px;
+
+  &__item {
+    font-size: 1.25rem;
+    font-weight: 700;
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      transform: translateX(-50%);
+      content: '';
+      width: 90%;
+      height: 2px;
+      background-color: var(--color-tertiary);
+      border-radius: 5px;
+      opacity: 0.2;
+    }
+
+    &:last-of-type {
+      &::after {
+        display: none;
+      }
+    }
+  }
+}

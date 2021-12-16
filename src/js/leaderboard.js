@@ -1,4 +1,5 @@
-const gameID = 'jy7H24VNgMhDXHdXJ4Sz';
+/* eslint-disable comma-dangle */
+const gameID = 'ccOqEXAN4wp5rkkNUUQ8';
 
 class Leaderboard {
   #gameID;
@@ -12,14 +13,14 @@ class Leaderboard {
   async fetchScores() {
     try {
       const response = await fetch(
-        `${this.#baseUrl}games/${this.#gameID}/scores/`,
+        `${this.#baseUrl}games/${this.#gameID}/scores/`
       );
 
       if (!response.ok) throw new Error('Failed to fetch');
 
       return response.json();
     } catch (error) {
-      return error;
+      return false;
     }
   }
 
@@ -36,24 +37,26 @@ class Leaderboard {
           },
           referrerPolicy: 'no-referrer',
           body: JSON.stringify(scoreObject),
-        },
+        }
       );
 
       if (!response.ok) throw new Error('bad request');
 
       return response.json();
     } catch (error) {
-      return error;
+      return false;
     }
   }
 
   async getScores() {
     try {
       const { result: scoreBoard } = await this.fetchScores();
+      if (!scoreBoard) throw new Error('Failed to fetch scores');
+
       scoreBoard.sort((score1, score2) => score2.score - score1.score);
       return scoreBoard;
     } catch (error) {
-      return error;
+      return false;
     }
   }
 }
